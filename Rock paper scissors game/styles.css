@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    background-color: #488582;
+    padding: 0.4rem;
+    margin: 0%;
+    font-family: monospace;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+ h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 0%;
+    font-family: monospace;
+  }
+
+  /* Outputs: playerScore, computerScore, final round results  */
+
+#roundResults {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  border: 5px solid rgb(27, 27, 31);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  }
+
+  #rock, #paper, #scissors {
+    padding: 0.8rem;
+    width: 100px;
+    border-radius: 15px;
+    background: #ffffff;
+    outline: none;
+    border-color: #488582;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+  }
+
+
+  #rock:hover {
+    background-color: #488582;
+    color:rgb(255, 255, 255);
+  }
+
+  #paper:hover {
+    background-color: #488582;
+    color:rgb(255, 255, 255);
+  }
+
+  #scissors:hover {
+    background-color: #488582;
+    color:rgb(255, 255, 255);
+  }
+
+  #reset {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #488582;
+    color:rgb(255, 255, 255);
+}
+  
+/* label */
+
+#resultLabel  {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+#playerLabel  {
+  font-size: 20px;
+  font-family: monospace;
+  color: #ffffff;
+  padding-left: 15px;
+  
+}
+
+#compLabel  {
+  font-size: 20px;
+  text-align: center;
+  font-family: monospace;
+  color: #ffffff;
+  padding-left: 18px;
+  padding-right: 3px;
+}
